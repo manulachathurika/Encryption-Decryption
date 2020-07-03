@@ -24,9 +24,9 @@ public class DESExample {
 	private static final byte[] iv = { 11, 22, 33, 44, 99, 88, 77, 66 };
 
 	public static void main(String[] args) {
-		String clearTextFile = "F:\\Manula\\HDSE - Software Security\\EncryptionDecryptionPractical\\Source.txt";
-		String cipherTextFile = "F:\\Manula\\HDSE - Software Security\\EncryptionDecryptionPractical\\Cipher.txt";
-		String clearTextNewFile = "F:\\Manula\\HDSE - Software Security\\EncryptionDecryptionPractical\\Source-new.txt";
+		String clearTextFile = "C:\\Users\\Acuity\\Projects\\Encryption-Decryption\\Source.txt";
+		String cipherTextFile = "C:\\Users\\Acuity\\Projects\\Encryption-Decryption\\Cipher.txt";
+		String clearTextNewFile = "C:\\Users\\Acuity\\Projects\\Encryption-Decryption\\Source-new.txt";
 
 		try {
 			// create SecretKey using KeyGenerator
