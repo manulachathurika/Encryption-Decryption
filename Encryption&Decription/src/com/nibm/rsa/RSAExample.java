@@ -83,6 +83,7 @@ public class RSAExample {
 
 		// Our secret message
 		String message = "We learn RSA algorithm";
+		System.out.println(message);
 
 		// Encrypt the message
 		String cipherText = encrypt(message, pair.getPublic());

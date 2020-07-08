@@ -21,7 +21,7 @@ import javax.crypto.spec.IvParameterSpec;
 public class DESExample {
 	private static Cipher encryptCipher;
 	private static Cipher decryptCipher;
-	private static final byte[] iv = { 11, 22, 33, 44, 99, 88, 77, 66 };
+	private static final byte[] iv = { 11, 22, 33, 44, 48, 88, 77, 66 };
 
 	public static void main(String[] args) {
 		String clearTextFile = "C:\\Users\\Acuity\\Projects\\Encryption-Decryption\\Source.txt";

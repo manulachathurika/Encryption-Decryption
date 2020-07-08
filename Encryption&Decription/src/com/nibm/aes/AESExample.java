@@ -55,9 +55,9 @@ public class AESExample {
 	
 	public static void main(String[] args) 
 	{
-	    final String secretKey = "ssshhhhhhhhhhh!!!!";
+	    final String secretKey = "%Q#$Masnd4t*!";
 	     
-	    String originalString = "NIBM AES practical session";
+	    String originalString = "NIBM AES practical session for 19.2F";
 	    String encryptedString = AESExample.encrypt(originalString, secretKey) ;
 	    String decryptedString = AESExample.decrypt(encryptedString, secretKey) ;
 	     
