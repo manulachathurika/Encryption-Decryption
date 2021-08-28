@@ -38,7 +38,7 @@ public class AESExample {
 		} catch (Exception e) {
 			System.out.println("Error while encrypting: " + e.toString());
 		}
-		return null;
+		return "Error in encrypting";
 	}
 
 	public static String decrypt(String strToDecrypt, String secret) {
@@ -50,14 +50,14 @@ public class AESExample {
 		} catch (Exception e) {
 			System.out.println("Error while decrypting: " + e.toString());
 		}
-		return null;
+		return "Error in decryting";
 	}
 	
-	public static void main(String[] args) 
-	{
+	public static void main(String[] args) 	{
+		
 	    final String secretKey = "%Q#$Masnd4t*!";
 	     
-	    String originalString = "NIBM AES practical session for 19.2F";
+	    String originalString = "NIBM AES practical session for 20.1P and 20.2F";
 	    String encryptedString = AESExample.encrypt(originalString, secretKey) ;
 	    String decryptedString = AESExample.decrypt(encryptedString, secretKey) ;
 	     

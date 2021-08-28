@@ -26,7 +26,7 @@ public class DESExample {
 	public static void main(String[] args) {
 		String clearTextFile = "C:\\Users\\thanman\\Projects\\Encryption-Decryption\\Source.txt";
 		String cipherTextFile = "C:\\Users\\thanman\\Projects\\Encryption-Decryption\\Cipher.txt";
-		String clearTextNewFile = "C:\\Users\\thanman\\Projects\\Encryption-Decryption\\Source-new.txt";
+		String decryptedTextFile = "C:\\Users\\thanman\\Projects\\Encryption-Decryption\\Decrypted.txt";
 
 		try {
 			// create SecretKey using KeyGenerator
@@ -45,8 +45,9 @@ public class DESExample {
 			encrypt(new FileInputStream(clearTextFile), new FileOutputStream(cipherTextFile));
 
 			// method to decrypt encrypted file to clear text file
-			decrypt(new FileInputStream(cipherTextFile), new FileOutputStream(clearTextNewFile));
-			System.out.println("DONE");
+			decrypt(new FileInputStream(cipherTextFile), new FileOutputStream(decryptedTextFile));
+			
+			System.out.println("Program Completed");
 		} catch (NoSuchAlgorithmException | NoSuchPaddingException | InvalidKeyException
 				| InvalidAlgorithmParameterException | IOException e) {
 			e.printStackTrace();
